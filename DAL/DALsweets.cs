@@ -77,12 +77,12 @@ namespace DAL
             }
         }
 
-        public MySqlDataReader ExecuteReader(String query, List<MySqlParameter> sqlparams)
+        public MySqlDataReader ExecuteReader(String query, List<MySqlParameter> sqlparams = null)
         {
 
             MySqlCommand Command = new MySqlCommand(query, connection);
 
-            if (!sqlparams.Any())
+            if (sqlparams!=null && !sqlparams.Any())
             {
                 foreach (var parameter in sqlparams)
                 {

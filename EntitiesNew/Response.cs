@@ -15,13 +15,18 @@ namespace EntitiesNew
         public String step;
     }
 
+    public class WelcomeResponse : DefaultResponse
+    {
+        public String about;
+    }
+
     public class GetAllItemsList : DefaultResponse
     {
-        List<FoodItem> Fooditems;
+        public List<FoodItem> Fooditems;
     }
 
     public class GetSpecificItemsList : DefaultResponse
     {
-        List<FoodItem> Fooditems;
+        public List<FoodItem> Fooditems;
     }
 }

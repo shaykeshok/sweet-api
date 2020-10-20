@@ -2,11 +2,14 @@
 
 namespace EntitiesNew
 {
-    class FoodItem
+    public class FoodItem
     {
-        string foodName;
-        string desc;
-        double price;
-        string img;
+        public int _id;
+        public string foodName;
+        public string description;
+        public double price;
+        public string imageUrl;
+        public int category;
+        public bool productVisibility;
     }
 }

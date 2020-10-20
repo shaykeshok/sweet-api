@@ -96,5 +96,11 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SystemModule\SystemUtils.csproj">
+      <Project>{e3c99435-68e0-4cf4-8e8e-8913b0b6b6ed}</Project>
+      <Name>SystemUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
